@@ -28,6 +28,6 @@ jourch=alljours[j];
 if(mois<10){
   mois="0"+mois
 }
-document.getElementById("date").textContent="Aujourd'hui"+"le"+jourch+","moish,","annee;
+document.getElementById("date").textContent="Aujourd'hui"+"le"+ jourch + ","+ moish + "," +annee;
 
   
