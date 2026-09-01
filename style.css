@@ -4,5 +4,6 @@ body{
 #horloge{
   text-align:center;
   color:white;
-  
+  font-family:algerian;
+  font-weight:bold;
 }
