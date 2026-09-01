@@ -22,14 +22,12 @@ function afficherDate(){
 let annee=now.getFullYear();
 let mois=now.getMonth();
 let jour=now.getDate();
-let allmois=["janvier","fevrier","aout","septembre","octobre","novembre","decembre"];
+let allmois=["janvier","fevrier","mars","avril","mai","juin","juillet","aout","septembre","octobre","novembre","decembre"];
 let moisch=allmois[mois];
-let alljours=["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"];
+let alljours=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
 j=now.getDay();
 jourch=alljours[j];
-if(mois<10){
- mois="0"+mois
-}
+  
 document.getElementById("date").textContent = "Aujourd'hui, le " + jourch + " " + jour + " " + moisch + " " + annee;
 }
 afficherDate();
