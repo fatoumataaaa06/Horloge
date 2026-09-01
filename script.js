@@ -2,7 +2,7 @@ function afficherHeure(){
   let now=new Date();
   let heure=now.getHours();
   let minutes=now.getMinutes();
-  let secondes=now.getSecondes();
+  let secondes=now.getSeconds();
   if(heure<10){
     heure="0"+heure;
   }
@@ -15,5 +15,5 @@ function afficherHeure(){
   document.write(heure +":"+ minutes +":"+ secondes);
 }
   afficherHeure();
-setInterval(afficherHeure(),1000);
+setInterval(afficherHeure,1000);
   
