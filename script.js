@@ -12,7 +12,7 @@ function afficherHeure(){
     if(secondes<10){
     secondes="0"+secondes;
   }
-  document.write(heure +":"+ minutes +":"+ secondes);
+  document.getElementById("horloge").textContent=heure +":"+ minutes +":"+ secondes;
 }
   afficherHeure();
 setInterval(afficherHeure,1000);
