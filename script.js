@@ -17,6 +17,7 @@ function afficherHeure(){
   afficherHeure();
 setInterval(afficherHeure,1000);
 
+function afficherDate(){
 let annee=now.getFullYear();
 let mois=now.getMonth();
 let jour=now.getDate();
@@ -26,8 +27,10 @@ let alljours=["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"]
 j=now.getDay();
 jourch=alljours[j];
 if(mois<10){
-  mois="0"+mois
+ mois="0"+mois
 }
 document.getElementById("date").textContent="Aujourd'hui"+"le"+ jourch + ","+ moish + "," +annee;
+}
+afficherDate();
 
   
