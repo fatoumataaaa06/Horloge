@@ -18,6 +18,7 @@ function afficherHeure(){
 setInterval(afficherHeure,1000);
 
 function afficherDate(){
+  let now= new Date();
 let annee=now.getFullYear();
 let mois=now.getMonth();
 let jour=now.getDate();
